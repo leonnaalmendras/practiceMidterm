@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin: 0 auto;
+            width: 50%;
+        }
+        h1 {text-align: center;}
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Installation</h1>
+    <p>The first step to getting started with Home Assistant is to install 
+        it on a device. There are many ways to run it for all kinds of scenarios and all kinds of skill levels.</p>
+
+    <h3>{{title}}</h3>
+    <p>{{subtitle}}</p>
+
+    <h3>Skills Required</h3>
+    <ul>
+        {%for x in skills%}
+            <li>{{x}}</li>
+        {%endfor%}
+    </ul>
+    <h3>Tools Required</h3>
+    <ul>
+        {%for x in tools%}
+            <li>{{x}}</li>
+        {%endfor%}
+    </ul>
+    </div>
+</body>
+</html>

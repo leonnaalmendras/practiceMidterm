@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Assistant Guide</title>
+    <style>
+        div {
+            margin: 0 auto;
+            width: 50%;
+        }
+        h1 {text-align: center;}
+        ul {list-style-type: none; padding: 0;}
+        li {margin-bottom: 10px;}
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Welcome to Home Assistant Guide</h1>
+        <p>Please select a section:</p>
+        <select onchange="location = this.value;">
+            <option value="">Select a section</option>
+            <option value="{% url 'installation' %}">Installation</option>
+            <option value="{% url 'configuration' %}">Configuration</option>
+            <option value="{% url 'automation' %}">Automation</option>
+        </select>
+    </div>
+</body>
+</html>
